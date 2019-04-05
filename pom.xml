@@ -84,17 +84,24 @@
 		</dependency>
 
 	</dependencies>
+	<repositories>
+	 <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Artifactory Repository</name>
+	      <url>http://ec2-34-230-68-112.compute-1.amazonaws.com:8081/repository/flipkart-proxy/</url>
+	 </repository>
+        </repositories>
 	
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Artifactory Repository</name>
-	      <url>http://localhost:8085/mithun/repository/flipkart-releases/</url>
+	      <url>http://ec2-34-230-68-112.compute-1.amazonaws.com:8081/repository/flipkart-release/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8085/mithun/repository/flipkart-snapshot/</url>
+	      <url>http://ec2-34-230-68-112.compute-1.amazonaws.com:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
